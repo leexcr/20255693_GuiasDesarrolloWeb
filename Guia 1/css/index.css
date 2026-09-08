@@ -1,0 +1,80 @@
+.header-inicio {
+    background-color: rgb(218, 238, 255);
+    border-bottom: 5px solid rgb(215, 9, 130);
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+}
+
+.header-inicio h1 {
+    color: rgb(215, 9, 130);
+    font-size: 38px;
+    margin: 0 0 10px 0;
+}
+
+.header-inicio p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.contenedor-ejercicios {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+.tarjeta-ejercicio {
+    background-color: rgb(218, 238, 255);
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 35px 40px;
+    text-decoration: none;
+    display: block;
+}
+
+.tarjeta-ejercicio:hover {
+    border-color: rgb(215, 9, 130);
+    box-shadow: 0 8px 20px rgba(215, 9, 130, 0.15);
+}
+
+.info-ejercicio {
+    text-align: center;
+}
+
+.info-ejercicio h2 {
+    color: rgb(215, 9, 130);
+    font-size: 26px;
+    margin: 0 0 12px 0;
+}
+
+.info-ejercicio p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.video {
+    background-color: rgb(255, 218, 251);
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: block;
+    margin: 0 auto;  
+    margin-top: 60px;
+}
+
+.tarjeta-ejerci {
+    background-color:  rgb(255, 218, 251);
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 35px 40px;
+    text-decoration: none;
+    display: block;
+}
+
+.tarjeta-ejerci:hover {
+    border-color: rgb(9, 78, 215);
+    box-shadow: 0 8px 20px rgba(215, 9, 130, 0.15);
+}

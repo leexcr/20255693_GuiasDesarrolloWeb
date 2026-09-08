@@ -1,0 +1,30 @@
+body{
+    background-color: lightblue;
+}
+
+div{
+    font-size: 20px;
+}
+
+h2{
+    text-decoration: underline;
+    color: white;
+}
+
+p.parrafo1{
+    color: navy;
+    font-weight: bold;
+}
+
+p.parrafo2{
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+p.parrafo3{
+    font-size: 12px;
+}
+
+span.cursiva{
+    font-style: italic;
+}
