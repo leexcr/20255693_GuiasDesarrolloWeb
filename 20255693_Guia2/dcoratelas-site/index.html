@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D'Coratelas — Telas importadas y decoración</title>
+<meta name="description" content="Telas importadas, bordados y pedrería para novias, fiesta y decoración. D'Coratelas, El Salvador.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @font-face{
+    font-family:'Libre Caslon Condensed';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/libre-caslon-condensed@latest/latin-400-normal.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/fontsource/fonts/libre-caslon-condensed@latest/latin-400-normal.woff) format('woff');
+  }
+</style>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-row">
+    <div class="nav-left">
+      <a class="nav-link is-current" href="index.html">Inicio</a>
+      <a class="nav-link" href="catalogo.html">Catálogo</a>
+    </div>
+    <a href="index.html" class="wordmark-nav">D'CORA<span class="dash">—</span>TELAS</a>
+    <div class="nav-right">
+      <a class="nav-link" href="contacto.html">Contacto</a>
+      <a class="nav-link" href="https://wa.me/50376545351" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">Cerrar</button>
+  <a href="index.html">Inicio</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline poster="assets/img/hero-pearl-poster.jpg">
+      <source src="assets/video/hero-pearl.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Telas importadas · San Salvador</p>
+    <h1>Las mejores telas importadas</h1>
+    <p>Encuentra la tela perfecta para tu vestido de fiesta: tul bordado, pedrería y encaje traídos para cada ocasión.</p>
+    <div class="cta-row">
+      <a class="ghost-link" href="catalogo.html">
+        Ver catálogo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="ghost-link" href="https://wa.me/50376545351" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="ghost-link" href="https://maps.app.goo.gl/PWYm7uKaApte2uvR9" target="_blank" rel="noopener">Ver ubicación</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head centered">
+      <h2>Bordado a mano.<br>Pedrería importada.</h2>
+      <p>Cada rollo llega desde fuera de El Salvador para que tu vestido, tu evento o tu proyecto de decoración tenga una tela que no encuentras en cualquier lugar.</p>
+    </div>
+
+    <div class="image-grid">
+      <div class="grid-media">
+        <img src="assets/img/novias-hero-1.jpg" alt="Novia con vestido de encaje y velo bordado, vista de espalda">
+      </div>
+      <div class="text-col">
+        <h3>Para novias</h3>
+        <p>Tul bordado, encaje francés y pedrería fina para el vestido que se lleva una sola vez. Trabajamos con nuestras clientas y sus modistas para encontrar la tela exacta que tenían en mente.</p>
+        <a class="ghost-link" href="catalogo.html#novias">Ver telas de novia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-mist">
+  <div class="container">
+    <div class="section-head">
+      <h2>Lo más buscado esta temporada</h2>
+      <p>Tres colores que nuestras clientas piden una y otra vez.</p>
+    </div>
+
+    <div class="card-grid">
+      <a class="cat-card reveal" href="catalogo.html#novias">
+        <div class="cat-media"><img src="assets/img/novias-5-floral.jpg" alt="Tul bordado blanco con flores 3D para novia"></div>
+        <span class="cat-tag">Más pedido</span>
+        <h4>Novias</h4>
+        <span class="cat-desc">Blanco, ivory y encaje floral</span>
+      </a>
+      <a class="cat-card reveal" href="catalogo.html#burgundy">
+        <div class="cat-media"><img src="assets/img/burgundy-1.jpg" alt="Tul bordado en color burgundy"></div>
+        <span class="cat-tag">Fiesta</span>
+        <h4>Burgundy</h4>
+        <span class="cat-desc">Bordado floral en tono vino</span>
+      </a>
+      <a class="cat-card reveal" href="catalogo.html#blue">
+        <div class="cat-media"><img src="assets/img/blue-2.jpg" alt="Tul bordado azul rey con lentejuela"></div>
+        <span class="cat-tag">Fiesta</span>
+        <h4>Blue</h4>
+        <span class="cat-desc">Azul rey con brillo</span>
+      </a>
+      <a class="cat-card reveal" href="catalogo.html#rosa">
+        <div class="cat-media"><img src="assets/img/pink-3.jpg" alt="Tul bordado rosa con flores 3D"></div>
+        <span class="cat-tag">Nuevo</span>
+        <h4>Rosa</h4>
+        <span class="cat-desc">Flores 3D en tono rosa</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="image-grid reverse">
+      <div class="grid-media">
+        <img src="assets/img/champagne-2.jpg" alt="Tul bordado en tono champagne con flores y mariposas">
+      </div>
+      <div class="text-col">
+        <h3>Un catálogo completo de color</h3>
+        <p>Además de novias, burgundy, blue y rosa, tenemos verde, champagne, negro y más. Cada color con su propio bordado, su propia pedrería, su propio brillo.</p>
+        <a class="ghost-link" href="catalogo.html">Ver catálogo completo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="contactoFooter">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-wordmark">D'CORA<span style="color:var(--color-steel)">—</span>TELAS</p>
+        <p>Telas importadas y decoración para vestidos de novia, fiesta y eventos en El Salvador.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/dcoratelas/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 9H16V6h-2.5C11.57 6 10 7.57 10 9.5V11H8v3h2v7h3v-7h2.5l.5-3H13v-1.2c0-.5.3-.8.9-.8Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dcoratelas" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm0 5.6a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4ZM16.4 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/><path d="M17 3H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4Zm2.4 14a2.4 2.4 0 0 1-2.4 2.4H7A2.4 2.4 0 0 1 4.6 17V7A2.4 2.4 0 0 1 7 4.6h10A2.4 2.4 0 0 1 19.4 7Z"/></svg>
+          </a>
+          <a href="https://pin.it/2hUBdaZJv" target="_blank" rel="noopener" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.37 2 11.75c0 4.06 2.55 7.53 6.15 8.98-.08-.76-.16-1.94.03-2.78.17-.75 1.1-4.77 1.1-4.77s-.28-.56-.28-1.38c0-1.3.77-2.27 1.72-2.27.81 0 1.2.6 1.2 1.32 0 .8-.52 2-.79 3.12-.22.94.48 1.71 1.42 1.71 1.71 0 2.92-2.16 2.92-4.72 0-1.95-1.36-3.4-3.82-3.4-2.78 0-4.51 2.03-4.51 4.29 0 .78.24 1.33.62 1.75.17.19.19.27.13.5-.05.17-.15.58-.19.74-.06.24-.25.33-.46.24-1.29-.51-1.89-1.87-1.89-3.4 0-2.53 2.19-5.56 6.53-5.56 3.49 0 5.79 2.48 5.79 5.14 0 3.52-1.98 6.15-4.9 6.15-.98 0-1.9-.53-2.21-1.13 0 0-.53 2.07-.64 2.47-.19.71-.56 1.42-.9 1.97a10 10 0 0 0 2.98.46c5.52 0 10-4.37 10-9.75S17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@dcoratelas" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.02-3.09h-2.9v13.35a2.68 2.68 0 1 1-1.9-2.56v-2.95a5.63 5.63 0 1 0 4.8 5.57V9.35a7.16 7.16 0 0 0 3.02.7V7.15a4.28 4.28 0 0 1 0-1.33Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Conéctate con nosotros</h5>
+        <a href="https://wa.me/50376545351" target="_blank" rel="noopener">WhatsApp: +503 7654 5351</a>
+        <a href="https://maps.app.goo.gl/PWYm7uKaApte2uvR9" target="_blank" rel="noopener">Ver ubicación</a>
+        <a href="https://pin.it/2hUBdaZJv" target="_blank" rel="noopener">Catálogo en Pinterest</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Ubicación</h5>
+        <p>San Salvador, El Salvador</p>
+        <p>Lunes a sábado</p>
+        <p>9:00 a.m. – 6:00 p.m.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 D'Coratelas. Todos los derechos reservados.</span>
+      <span>Telas importadas · Decoración · San Salvador</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

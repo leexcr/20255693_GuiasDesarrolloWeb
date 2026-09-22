@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — D'Coratelas</title>
+<meta name="description" content="Escríbenos a D'Coratelas por WhatsApp o visítanos en San Salvador. Telas importadas para novias, fiesta y decoración.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @font-face{
+    font-family:'Libre Caslon Condensed';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/libre-caslon-condensed@latest/latin-400-normal.woff2) format('woff2'),
+         url(https://cdn.jsdelivr.net/fontsource/fonts/libre-caslon-condensed@latest/latin-400-normal.woff) format('woff');
+  }
+</style>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-row">
+    <div class="nav-left">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="catalogo.html">Catálogo</a>
+    </div>
+    <a href="index.html" class="wordmark-nav">D'CORA<span class="dash">—</span>TELAS</a>
+    <div class="nav-right">
+      <a class="nav-link is-current" href="contacto.html">Contacto</a>
+      <a class="nav-link" href="https://wa.me/50376545351" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">Cerrar</button>
+  <a href="index.html">Inicio</a>
+  <a href="catalogo.html">Catálogo</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Contacto</p>
+    <h1>Escríbenos</h1>
+    <p>Cuéntanos qué tela buscas y te respondemos directo por WhatsApp — con foto, precio y disponibilidad.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="form-grid">
+
+      <form id="contactForm">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="7654 5351">
+        </div>
+        <div class="field">
+          <label for="categoria">Categoría de interés</label>
+          <select id="categoria" name="categoria">
+            <option value="">Selecciona una opción</option>
+            <option value="Novias">Novias</option>
+            <option value="Burgundy">Burgundy</option>
+            <option value="Blue">Blue</option>
+            <option value="Verde">Verde</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Champagne">Champagne</option>
+            <option value="Negro">Negro</option>
+            <option value="Otro">Otro / no estoy segura</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas, cuántas yardas, o para qué fecha..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <span class="ghost-link">
+            Enviar por WhatsApp
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.42-1.34a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.93A9.86 9.86 0 0 0 12.04 2Zm5.79 14.13c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.16-4.94-4.36-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.48-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.94 1.22 2.22 1.36.28.14.44.12.6-.07.16-.2.68-.79.87-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.2.5.31.06.13.06.72-.18 1.4Z"/></svg>
+          </span>
+        </button>
+        <p class="form-note">Al enviar se abrirá WhatsApp con tu mensaje ya redactado — solo debes presionar enviar.</p>
+      </form>
+
+      <div class="info-col">
+        <h3>Visítanos</h3>
+
+        <div class="info-block">
+          <h4>Ubicación</h4>
+          <p>San Salvador, El Salvador</p>
+          <a href="https://maps.app.goo.gl/PWYm7uKaApte2uvR9" target="_blank" rel="noopener">Ver en el mapa →</a>
+        </div>
+
+        <div class="info-block">
+          <h4>Horario</h4>
+          <p>Lunes a sábado</p>
+          <p>9:00 a.m. – 6:00 p.m.</p>
+        </div>
+
+        <div class="info-block">
+          <h4>WhatsApp directo</h4>
+          <a href="https://wa.me/50376545351" target="_blank" rel="noopener">+503 7654 5351 →</a>
+        </div>
+
+        <div class="info-block">
+          <h4>Redes sociales</h4>
+          <a href="https://www.instagram.com/dcoratelas" target="_blank" rel="noopener">Instagram →</a>
+          <a href="https://www.facebook.com/dcoratelas/" target="_blank" rel="noopener">Facebook →</a>
+          <a href="https://pin.it/2hUBdaZJv" target="_blank" rel="noopener">Pinterest →</a>
+          <a href="https://www.tiktok.com/@dcoratelas" target="_blank" rel="noopener">TikTok →</a>
+        </div>
+
+        <div class="info-image">
+          <img src="assets/img/novias-4-geo.jpg" alt="Detalle de tul bordado blanco en patrón geométrico">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-wordmark">D'CORA<span style="color:var(--color-steel)">—</span>TELAS</p>
+        <p>Telas importadas y decoración para vestidos de novia, fiesta y eventos en El Salvador.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/dcoratelas/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 9H16V6h-2.5C11.57 6 10 7.57 10 9.5V11H8v3h2v7h3v-7h2.5l.5-3H13v-1.2c0-.5.3-.8.9-.8Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/dcoratelas" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm0 5.6a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4ZM16.4 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"/><path d="M17 3H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4Zm2.4 14a2.4 2.4 0 0 1-2.4 2.4H7A2.4 2.4 0 0 1 4.6 17V7A2.4 2.4 0 0 1 7 4.6h10A2.4 2.4 0 0 1 19.4 7Z"/></svg>
+          </a>
+          <a href="https://pin.it/2hUBdaZJv" target="_blank" rel="noopener" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.37 2 11.75c0 4.06 2.55 7.53 6.15 8.98-.08-.76-.16-1.94.03-2.78.17-.75 1.1-4.77 1.1-4.77s-.28-.56-.28-1.38c0-1.3.77-2.27 1.72-2.27.81 0 1.2.6 1.2 1.32 0 .8-.52 2-.79 3.12-.22.94.48 1.71 1.42 1.71 1.71 0 2.92-2.16 2.92-4.72 0-1.95-1.36-3.4-3.82-3.4-2.78 0-4.51 2.03-4.51 4.29 0 .78.24 1.33.62 1.75.17.19.19.27.13.5-.05.17-.15.58-.19.74-.06.24-.25.33-.46.24-1.29-.51-1.89-1.87-1.89-3.4 0-2.53 2.19-5.56 6.53-5.56 3.49 0 5.79 2.48 5.79 5.14 0 3.52-1.98 6.15-4.9 6.15-.98 0-1.9-.53-2.21-1.13 0 0-.53 2.07-.64 2.47-.19.71-.56 1.42-.9 1.97a10 10 0 0 0 2.98.46c5.52 0 10-4.37 10-9.75S17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@dcoratelas" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-3.02-3.09h-2.9v13.35a2.68 2.68 0 1 1-1.9-2.56v-2.95a5.63 5.63 0 1 0 4.8 5.57V9.35a7.16 7.16 0 0 0 3.02.7V7.15a4.28 4.28 0 0 1 0-1.33Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Conéctate con nosotros</h5>
+        <a href="https://wa.me/50376545351" target="_blank" rel="noopener">WhatsApp: +503 7654 5351</a>
+        <a href="https://maps.app.goo.gl/PWYm7uKaApte2uvR9" target="_blank" rel="noopener">Ver ubicación</a>
+        <a href="https://pin.it/2hUBdaZJv" target="_blank" rel="noopener">Catálogo en Pinterest</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Ubicación</h5>
+        <p>San Salvador, El Salvador</p>
+        <p>Lunes a sábado</p>
+        <p>9:00 a.m. – 6:00 p.m.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 D'Coratelas. Todos los derechos reservados.</span>
+      <span>Telas importadas · Decoración · San Salvador</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
