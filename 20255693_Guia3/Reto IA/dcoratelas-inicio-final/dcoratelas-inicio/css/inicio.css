@@ -1,0 +1,138 @@
+:root {
+  --vino: #380b0b;
+  --vino-medio: #5a1a1d;
+  --perla: #f7f0ea;
+  --tinta: #2a1515;
+  --fuente: "Montserrat", "Segoe UI", Arial, sans-serif;
+  --imagen-hero: url("https://img1.wsimg.com/isteam/ip/0aae0435-3e83-4ea4-8a87-294bf40af3bc/IMG_9250.jpeg");
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+
+/* ============================================================
+   GRID PRINCIPAL DE LA PÁGINA
+   El body es el contenedor Grid: 3 columnas con líneas con nombre
+   (márgenes flexibles a los lados y una zona "contenido" de 72rem).
+   Los Grid items son el encabezado, el hero, las secciones y el pie.
+   ============================================================ */
+body {
+  display: grid;
+  grid-template-columns:
+    [completo-start] minmax(1.25rem, 1fr)
+    [contenido-start] minmax(0, 72rem)
+    [contenido-end] minmax(1.25rem, 1fr)
+    [completo-end];
+  font-family: var(--fuente);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--tinta);
+  background: var(--perla);
+}
+
+/* Cada bloque ocupa todo el ancho y hereda las columnas con subgrid */
+.encabezado, .hero, .seccion, .pie {
+  grid-column: completo;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+h1, h2, h3 { font-weight: 600; line-height: 1.2; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); margin-bottom: 1rem; }
+h3 { font-size: 1.3rem; margin: 2rem 0 0.5rem; }
+p + p { margin-top: 1rem; }
+:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+/* ---------- Encabezado: Grid de 2 columnas (marca | teléfono) ---------- */
+.encabezado { position: sticky; top: 0; z-index: 10; color: #fff; background: var(--vino); }
+.barra {
+  grid-column: contenido;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding-block: 1rem;
+}
+.marca { font-size: 1.4rem; font-weight: 600; letter-spacing: 0.05em; }
+.telefono:hover { text-decoration: underline; }
+
+/* ---------- Hero con la imagen de la página original ---------- */
+.hero {
+  min-height: 80vh;
+  align-items: center;
+  color: #fff;
+  background-color: var(--vino);
+  background-image: linear-gradient(rgba(56, 11, 11, 0.55), rgba(56, 11, 11, 0.7)), var(--imagen-hero);
+  background-size: cover;
+  background-position: center;
+}
+.hero-texto { grid-column: contenido; max-width: 44rem; padding-block: 5rem; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin: 0.75rem 0 1rem; }
+.subtitulo { font-size: 1.25rem; }
+.botones { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.boton {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  font-weight: 500;
+  color: var(--vino);
+  background: #fff;
+  border-radius: 30px;
+  transition: background 0.3s, color 0.3s;
+}
+.boton:hover { color: #fff; background: var(--vino-medio); }
+
+/* ---------- Secciones ---------- */
+.seccion { padding-block: 5rem; }
+.seccion > * { grid-column: contenido; }
+.seccion-vino { color: #f3e6de; background: var(--vino); }
+.seccion-vino h2, .seccion-vino h3 { color: #fff; }
+.titulo-seccion { max-width: 40rem; margin-bottom: 2.5rem; }
+.enlace { display: inline-block; margin-top: 1.5rem; padding-bottom: 0.2rem; color: var(--vino-medio); font-weight: 500; border-bottom: 1px solid currentColor; }
+.enlace:hover { color: var(--vino); }
+
+/* Dos columnas: texto + imagen */
+.par { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.par > img { width: 100%; height: 100%; max-height: 38rem; object-fit: cover; }
+.par-inverso > :first-child { order: 2; }
+
+/* Tarjetas destacadas: 4 columnas, la primera ocupa 2x2 */
+.destacados { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 16rem; gap: 1rem; }
+
+.tarjeta { 
+  display: grid; 
+  overflow: hidden; 
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr); 
+}
+
+.tarjeta:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.tarjeta:nth-child(4) { grid-column: span 2; }
+/* imagen y texto comparten la misma celda; el texto va encima */
+.tarjeta > * { grid-area: 1 / 1; }
+.tarjeta img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+.tarjeta:hover img { transform: scale(1.04); }
+.tarjeta-texto { align-self: end; padding: 3rem 1.25rem 1.25rem; color: #fff; background: linear-gradient(to top, rgba(56, 11, 11, 0.9), transparent); }
+.tarjeta-texto span { font-size: 0.85rem; }
+.tarjeta-texto h3 { margin: 0; font-size: 1.6rem; }
+
+/* Mosaico: imagen alta a la izquierda y dos apiladas a la derecha */
+.mosaico { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, 14rem); gap: 1rem; }
+.mosaico img { width: 100%; height: 100%; object-fit: cover; }
+.mosaico img:first-child { grid-row: span 2; }
+
+/* ---------- Pie de página ---------- */
+.pie { padding-block: 4rem; color: #fff; background: var(--vino); text-align: center; }
+.pie-contenido { grid-column: contenido; display: grid; justify-items: center; gap: 1.25rem; }
+.pie h2 { margin: 0; }
+.redes { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem 2rem; }
+.redes a:hover { text-decoration: underline; }
+.copyright { margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8; }
+
+/* ---------- Pantallas pequeñas ---------- */
+@media (max-width: 56rem) {
+  .par { grid-template-columns: 1fr; gap: 2rem; }
+  .par-inverso > :first-child { order: 0; }
+  .destacados { grid-template-columns: 1fr 1fr; }
+  .tarjeta:nth-child(1) { grid-row: auto; }
+  .seccion { padding-block: 3.5rem; }
+}
