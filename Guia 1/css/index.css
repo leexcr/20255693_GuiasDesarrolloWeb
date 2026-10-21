@@ -109,6 +109,10 @@ a {
   background-color: var(--oliva-oscuro);
 }
 
+.guia-4 {
+  background-color: var(--durazno);
+}
+
 .guia h2 {
   margin-bottom: 2rem;
   font-family: var(--fuente-titulo);
