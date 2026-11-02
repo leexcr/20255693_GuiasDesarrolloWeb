@@ -113,6 +113,10 @@ a {
   background-color: var(--durazno);
 }
 
+.guia-5 {
+  background-color: #e6e4a6;
+}
+
 .guia h2 {
   margin-bottom: 2rem;
   font-family: var(--fuente-titulo);
