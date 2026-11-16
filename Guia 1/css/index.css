@@ -109,12 +109,16 @@ a {
   background-color: var(--oliva-oscuro);
 }
 
-.guia-4 {
+.guia-5 {
   background-color: var(--durazno);
 }
 
-.guia-5 {
+.guia-6 {
   background-color: #e6e4a6;
+}
+
+.guia-7 {
+  background-color: #f4a9bd;
 }
 
 .guia h2 {
